@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Recipe: Identifiable, Decodable{
+class Recipe: Identifiable, Decodable {
     
     var id:UUID?
     
@@ -19,11 +19,21 @@ class Recipe: Identifiable, Decodable{
     var cookTime:String
     var totalTime:String
     var servings:Int
-    var ingredients:[String]
+    var highlights:[String]
+    var ingredients:[Ingredient]
     var directions:[String]
     
     //note: if you are not interested in a piece of data in the json file, simply don't create a property for it (decoder will skip it)
+}
+
+class Ingredient: Identifiable, Decodable {
     
+    var id:UUID?
+    
+    var name:String
+    var numerator:Int?
+    var denominator:Int?
+    var unit:String?
     
     
 }
