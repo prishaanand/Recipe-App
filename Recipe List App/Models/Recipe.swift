@@ -31,8 +31,8 @@ class Ingredient: Identifiable, Decodable {
     var id:UUID?
     
     var name:String
-    var numerator:Int?
-    var denominator:Int?
+    var num:Int?
+    var denom:Int?
     var unit:String?
     
     

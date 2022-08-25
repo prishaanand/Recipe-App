@@ -11,6 +11,9 @@ struct RecipeDetailView: View {
     
     //specific recipe is determined by what the user taps on in the list view
     var recipe:Recipe
+    //serving size picker
+    @State var selectedServingSize = 2
+    
     
     var body: some View {
         
@@ -22,21 +25,36 @@ struct RecipeDetailView: View {
                 Image(recipe.image)
                     .resizable()
                     .scaledToFill()
-
+                
+                //MARK: Serving Size Picker
+                VStack (alignment: .leading) {
+                    Text("Select your serving size: ")
+                    Picker("", selection: $selectedServingSize){
+                        //match tag number with serving size in order to see changes reflected in state property
+                        Text("2").tag(2)
+                        Text("4").tag(4)
+                        Text("6").tag(6)
+                        Text("8").tag(8)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 160)
+                }
+                .padding()
+            
                 //MARK: Instructions
                 VStack(alignment: .leading) {
                     Text("Ingredients")
                         .font(.headline)
                         .padding([.bottom, .top], 5)
                     ForEach (recipe.ingredients){ item in
-                        Text("• " + item.name)
+                        Text("• " + RecipeModel.getPortion(ingredient: item, recipeServings: recipe.servings, targetServings: selectedServingSize) + " " + item.name.lowercased())
                     }
                 }
                 .padding(.horizontal)
                 
                 //MARK: Divider
                 Divider()
-            
+                
                 //MARK: Directions
                 VStack(alignment: .leading){
                     Text("Directions")

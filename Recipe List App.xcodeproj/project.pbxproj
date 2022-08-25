@@ -18,6 +18,7 @@
 		B1810BA628B71593008E9610 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810BA528B71593008E9610 /* RecipeDetailView.swift */; };
 		B1810BC628B736FD008E9610 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810BC528B736FD008E9610 /* RecipeTabView.swift */; };
 		B1810BE628B7E4C5008E9610 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810BE528B7E4C5008E9610 /* RecipeFeaturedView.swift */; };
+		B1810C2928B819EF008E9610 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810C2828B819EF008E9610 /* Rational.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B1810BA528B71593008E9610 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		B1810BC528B736FD008E9610 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		B1810BE528B7E4C5008E9610 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
+		B1810C2828B819EF008E9610 /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				B1022BDD28B5DA6D0086D19B /* Models */,
 				B1022BDF28B5DA840086D19B /* Services */,
 				B1022BDE28B5DA7E0086D19B /* Data */,
+				B1810C2728B819CE008E9610 /* Utilities */,
 				B1022BD128B5D9F30086D19B /* Assets.xcassets */,
 				B1022BD328B5D9F30086D19B /* Preview Content */,
 			);
@@ -126,6 +129,14 @@
 				B1022BE628B5DE730086D19B /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B1810C2728B819CE008E9610 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B1810C2828B819EF008E9610 /* Rational.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			files = (
 				B1022BE328B5DBB70086D19B /* Recipe.swift in Sources */,
 				B1810BA628B71593008E9610 /* RecipeDetailView.swift in Sources */,
+				B1810C2928B819EF008E9610 /* Rational.swift in Sources */,
 				B1022BE528B5DD140086D19B /* RecipeModel.swift in Sources */,
 				B1022BD028B5D9F10086D19B /* RecipeListView.swift in Sources */,
 				B1022BCE28B5D9F10086D19B /* Recipe_List_App.swift in Sources */,
