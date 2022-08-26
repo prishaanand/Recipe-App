@@ -19,7 +19,11 @@ struct RecipeListView: View {
             
             VStack(alignment: .leading){
                 
-                
+                Text("All Recipes")
+                    .bold()
+                    .padding(.top, 20)
+                    .padding(.leading)
+                    .font(.largeTitle)
                 
                 //change list into a scrollview to eliminate lines between elements
                 ScrollView{
@@ -38,8 +42,14 @@ struct RecipeListView: View {
                                         .frame(width: 50, height: 50, alignment: .center)
                                         .clipped()
                                         .cornerRadius(5)
-                                    Text(r.name)
-                                        .foregroundColor(.black)
+                                    VStack(alignment: .leading){
+                                        Text(r.name)
+                                            .foregroundColor(.black)
+                                            .bold()
+                                        RecipeHighlights(highlights: r.highlights)
+                                            .foregroundColor(.black)
+                                    }
+                                    
                                 }
                             })
                             

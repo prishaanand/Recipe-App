@@ -19,6 +19,7 @@
 		B1810BC628B736FD008E9610 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810BC528B736FD008E9610 /* RecipeTabView.swift */; };
 		B1810BE628B7E4C5008E9610 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810BE528B7E4C5008E9610 /* RecipeFeaturedView.swift */; };
 		B1810C2928B819EF008E9610 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810C2828B819EF008E9610 /* Rational.swift */; };
+		B1CA35AC28B985B500F98BBB /* RecipeHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA35AB28B985B500F98BBB /* RecipeHighlights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B1810BC528B736FD008E9610 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		B1810BE528B7E4C5008E9610 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
 		B1810C2828B819EF008E9610 /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		B1CA35AB28B985B500F98BBB /* RecipeHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +95,9 @@
 			children = (
 				B1022BCF28B5D9F10086D19B /* RecipeListView.swift */,
 				B1810BE528B7E4C5008E9610 /* RecipeFeaturedView.swift */,
-				B1810BA528B71593008E9610 /* RecipeDetailView.swift */,
 				B1810BC528B736FD008E9610 /* RecipeTabView.swift */,
+				B1810BA528B71593008E9610 /* RecipeDetailView.swift */,
+				B1CA35AB28B985B500F98BBB /* RecipeHighlights.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				B1022BE328B5DBB70086D19B /* Recipe.swift in Sources */,
 				B1810BA628B71593008E9610 /* RecipeDetailView.swift in Sources */,
+				B1CA35AC28B985B500F98BBB /* RecipeHighlights.swift in Sources */,
 				B1810C2928B819EF008E9610 /* Rational.swift in Sources */,
 				B1022BE528B5DD140086D19B /* RecipeModel.swift in Sources */,
 				B1022BD028B5D9F10086D19B /* RecipeListView.swift in Sources */,
