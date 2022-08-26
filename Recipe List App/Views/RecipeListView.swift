@@ -19,10 +19,7 @@ struct RecipeListView: View {
             
             VStack(alignment: .leading){
                 
-                Text("All Recipes")
-                    .bold()
-                    .padding(.top, 40)
-                    .font(.largeTitle)
+                
                 
                 //change list into a scrollview to eliminate lines between elements
                 ScrollView{
