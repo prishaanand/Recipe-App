@@ -19,6 +19,8 @@ struct RecipeDetailView: View {
         
         ScrollView{
             
+            
+            
             VStack(alignment: .leading, spacing: 0){
                 
                 //MARK: Recipe Image
