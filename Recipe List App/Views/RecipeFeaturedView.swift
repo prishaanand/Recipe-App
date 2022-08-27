@@ -18,10 +18,11 @@ struct RecipeFeaturedView: View {
         
             //title
             Text("Featured Recipes")
-                .bold()
                 .padding(.leading)
-                .padding(.top, 40)
-                .font(.largeTitle)
+                .padding(.trailing)
+                .padding(.top, 10)
+                .font(Font.custom("Madista Calligraphy", size: 48))
+                .opacity(0.8)
                 
             //MARK: geo reader start
             GeometryReader { geo in
@@ -54,6 +55,8 @@ struct RecipeFeaturedView: View {
                                         .clipped()
                                     Text(model.recipes[index].name)
                                         .padding(5)
+                                        .font(Font.custom("Madista Calligraphy", size: 20))
+                                        .opacity(0.75)
                                 }
                             }
                             
@@ -64,7 +67,7 @@ struct RecipeFeaturedView: View {
                             RecipeDetailView(recipe: model.recipes[index])
                         }
                         .buttonStyle(PlainButtonStyle())
-                        .frame(width: geo.size.width - 40, height: geo.size.height - 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: geo.size.width - 40, height: geo.size.height - 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .cornerRadius(15)
                         .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.5), radius: 10, x: -5, y: 5)
                         
@@ -82,12 +85,18 @@ struct RecipeFeaturedView: View {
             VStack (alignment: .leading, spacing: 10) {
                 
                 Text("Preparation Time:")
-                    .font(.headline)
+                    .font(Font.custom("Afterglow-Regular", size: 20))
+                    .opacity(0.75)
                 Text(model.recipes[tabSelectionIndex].prepTime)
+                    .font(Font.custom("Afterglow-Regular", size: 15))
+                    .opacity(0.5)
                 
                 Text("Highlights")
-                    .font(.headline)
+                    .font(Font.custom("Afterglow-Regular", size: 20))
+                    .opacity(0.75)
                 RecipeHighlights(highlights: model.recipes[tabSelectionIndex].highlights)
+                    .font(Font.custom("Afterglow-Regular", size: 15))
+                    .opacity(0.5)
             }
             .padding([.leading, .bottom])
             

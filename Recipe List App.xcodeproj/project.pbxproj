@@ -20,6 +20,8 @@
 		B1810BE628B7E4C5008E9610 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810BE528B7E4C5008E9610 /* RecipeFeaturedView.swift */; };
 		B1810C2928B819EF008E9610 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1810C2828B819EF008E9610 /* Rational.swift */; };
 		B1CA35AC28B985B500F98BBB /* RecipeHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA35AB28B985B500F98BBB /* RecipeHighlights.swift */; };
+		B1CA35BF28B99E5F00F98BBB /* Afterglow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1CA35BE28B99E5F00F98BBB /* Afterglow-Regular.ttf */; };
+		B1CA35C128B9A29F00F98BBB /* Madista Calligraphy .ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1CA35C028B9A29F00F98BBB /* Madista Calligraphy .ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		B1810BE528B7E4C5008E9610 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
 		B1810C2828B819EF008E9610 /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 		B1CA35AB28B985B500F98BBB /* RecipeHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlights.swift; sourceTree = "<group>"; };
+		B1CA35BD28B99E2D00F98BBB /* Recipe-List-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Recipe-List-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B1CA35BE28B99E5F00F98BBB /* Afterglow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Afterglow-Regular.ttf"; sourceTree = "<group>"; };
+		B1CA35C028B9A29F00F98BBB /* Madista Calligraphy .ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Madista Calligraphy .ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,7 @@
 		B1022BCC28B5D9F10086D19B /* Recipe List App */ = {
 			isa = PBXGroup;
 			children = (
+				B1CA35BD28B99E2D00F98BBB /* Recipe-List-App-Info.plist */,
 				B1022BCD28B5D9F10086D19B /* Recipe_List_App.swift */,
 				B1022BDB28B5DA5A0086D19B /* Views */,
 				B1022BDC28B5DA610086D19B /* ViewModels */,
@@ -76,6 +82,7 @@
 				B1022BDF28B5DA840086D19B /* Services */,
 				B1022BDE28B5DA7E0086D19B /* Data */,
 				B1810C2728B819CE008E9610 /* Utilities */,
+				B1CA35C228B9AC0300F98BBB /* Resources */,
 				B1022BD128B5D9F30086D19B /* Assets.xcassets */,
 				B1022BD328B5D9F30086D19B /* Preview Content */,
 			);
@@ -142,6 +149,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		B1CA35C228B9AC0300F98BBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA35BE28B99E5F00F98BBB /* Afterglow-Regular.ttf */,
+				B1CA35C028B9A29F00F98BBB /* Madista Calligraphy .ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,6 +219,8 @@
 				B1022BD528B5D9F30086D19B /* Preview Assets.xcassets in Resources */,
 				B1022BE128B5DB310086D19B /* recipes.json in Resources */,
 				B1022BD228B5D9F30086D19B /* Assets.xcassets in Resources */,
+				B1CA35C128B9A29F00F98BBB /* Madista Calligraphy .ttf in Resources */,
+				B1CA35BF28B99E5F00F98BBB /* Afterglow-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +372,7 @@
 				DEVELOPMENT_TEAM = P775YD9KLQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Recipe-List-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -383,6 +402,7 @@
 				DEVELOPMENT_TEAM = P775YD9KLQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Recipe-List-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

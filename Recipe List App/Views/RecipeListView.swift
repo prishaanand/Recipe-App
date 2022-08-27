@@ -17,13 +17,14 @@ struct RecipeListView: View {
         
         NavigationView {
             
-            VStack(alignment: .leading){
+            VStack(alignment: .leading, spacing: 0){
                 
                 Text("All Recipes")
-                    .bold()
-                    .padding(.top, 20)
                     .padding(.leading)
-                    .font(.largeTitle)
+                    .padding(.trailing)
+                    .padding(.top, 10)
+                    .font(Font.custom("Madista Calligraphy", size: 48))
+                    .opacity(0.8)
                 
                 //change list into a scrollview to eliminate lines between elements
                 ScrollView{
@@ -45,9 +46,14 @@ struct RecipeListView: View {
                                     VStack(alignment: .leading){
                                         Text(r.name)
                                             .foregroundColor(.black)
-                                            .bold()
+                                            .opacity(0.75)
+                                            .font(Font.custom("Afterglow-Regular", size: 25))
                                         RecipeHighlights(highlights: r.highlights)
                                             .foregroundColor(.black)
+                                            .opacity(0.5)
+                                            .font(Font.custom("Afterglow-Regular", size: 20))
+            
+                                        
                                     }
                                     
                                 }

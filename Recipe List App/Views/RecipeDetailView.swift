@@ -19,7 +19,7 @@ struct RecipeDetailView: View {
         
         ScrollView{
             
-            VStack(alignment: .leading){
+            VStack(alignment: .leading, spacing: 0){
                 
                 //MARK: Recipe Image
                 Image(recipe.image)
@@ -29,14 +29,16 @@ struct RecipeDetailView: View {
                 //MARK: Recipe Title
                 //having title below image displays it when clicked on from the featured view
                 Text(recipe.name)
-                    .bold()
-                    .padding(.top, 20)
                     .padding(.leading)
-                    .font(.largeTitle)
+                    .padding(.top)
+                    .font(Font.custom("Madista Calligraphy", size: 30))
+                    .opacity(0.8)
                 
                 //MARK: Serving Size Picker
                 VStack (alignment: .leading) {
                     Text("Select your serving size: ")
+                        .opacity(0.75)
+                        .font(Font.custom("Afterglow-Regular", size: 20))
                     Picker("", selection: $selectedServingSize){
                         //match tag number with serving size in order to see changes reflected in state property
                         Text("2").tag(2)
@@ -52,10 +54,13 @@ struct RecipeDetailView: View {
                 //MARK: Instructions
                 VStack(alignment: .leading) {
                     Text("Ingredients")
-                        .font(.headline)
+                        .font(Font.custom("Afterglow-Regular", size: 20))
+                        .opacity(0.75)
                         .padding([.bottom, .top], 5)
                     ForEach (recipe.ingredients){ item in
                         Text("• " + RecipeModel.getPortion(ingredient: item, recipeServings: recipe.servings, targetServings: selectedServingSize) + " " + item.name.lowercased())
+                            .font(Font.custom("Afterglow-Regular", size: 15))
+                            .opacity(0.75)
                     }
                 }
                 .padding(.horizontal)
@@ -66,13 +71,16 @@ struct RecipeDetailView: View {
                 //MARK: Directions
                 VStack(alignment: .leading){
                     Text("Directions")
-                        .font(.headline)
+                        .font(Font.custom("Afterglow-Regular", size: 20))
+                        .opacity(0.75)
                         .padding([.bottom, .top], 5)
                     
                     //note: have to use index, not item
                     ForEach (0..<recipe.directions.count, id: \.self){ index in
                         Text(String(index+1) + ". " + recipe.directions[index])
                             .padding(.bottom, 5)
+                            .font(Font.custom("Afterglow-Regular", size: 15))
+                            .opacity(0.75)
                         
                     }
                 }
@@ -97,6 +105,6 @@ struct RecipeDetailView_Previews: PreviewProvider {
         let model = RecipeModel()
         
         
-        RecipeDetailView(recipe: model.recipes[0])
+        RecipeDetailView(recipe: model.recipes[2])
     }
 }
