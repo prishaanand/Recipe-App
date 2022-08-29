@@ -10,8 +10,8 @@ A simple iOS app that displays easy to make recipes for varying serving sizes an
 ##### Recipe List: All Recipes + Instructions 
 <img width="250" height="470" alt="list" src="https://user-images.githubusercontent.com/60487925/187131660-3b6532a9-53f2-4dc1-9071-c4257f209538.png"> <img width="250" height="470" alt="recipe" src="https://user-images.githubusercontent.com/60487925/187131657-63a31bf1-91eb-4d02-8cc8-6f5b6a65983e.png"> <img width="250" height="470" alt="recipe2" src="https://user-images.githubusercontent.com/60487925/187131662-61dfd876-28ac-4b21-b380-59b7ca3b89f1.png">
 
-#### Basic Functionality: Users are able to view certain featured recipes upon opening the app. If they are interested in one of the featured recipes, they have the opportunity to toggle to a slide up view of how to make that recipe. Additionally, users can view the list of all available recipes by tapping on the list navigation icon. Here, users can see further details for any recipe they like.
+#### Basic Functionality: 
+Users are able to view certain featured recipes upon opening the app. If they are interested in one of the featured recipes, they have the opportunity to toggle to a slide up view of how to make that recipe. Additionally, users can view the list of all available recipes by tapping on the list navigation icon. Here, users can see further details for any recipe they like.
 
-#### Special Features: In order to minimize the reason to pull out your calculator and perform confusing math on measurements with varying units, the app 
-includes a serving size feature. When looking at a recipe, the user can toggle between either 2, 4, 6, or 8 serving sizes, and the quanitity of ingredients
-will update accordingly. 
+#### Special Features: 
+In order to minimize the reason to pull out your calculator and perform confusing math on measurements with varying units, the app includes a serving size feature. When looking at a recipe, the user can toggle between either 2, 4, 6, or 8 serving sizes, and the quanitity of ingredients will update accordingly. 
